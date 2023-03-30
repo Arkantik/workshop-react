@@ -15,31 +15,26 @@ import Avatar from './components/Avatar.jsx'
 
 function App() {
   
-  const simpsons = [
+  const bart = 
     {
     image: "https://www.stickees.com/files/cartoon/the-simpsons/2239-bart-simpson-.png",
     firstName: "Bart",
     lastName: "Simpson"
-  }, 
+  }
+
+  const homer =
   {
     image: "https://www.stickees.com/files/cartoon/the-simpsons/2247-homer-simpson-beer.png",
     firstName: "Homer",
     lastName: "Simpson"
   }
-]
 
   return (
     <div>
-      <Avatar image={simpsons[0].image} firstName={simpsons[0].firstName} lastName={simpsons[0].lastName} />
-      {/* <Avatar image={homer.image} firstName={homer.firstName} lastName={homer.lastName} /> */}
+      <Avatar image={bart.image} firstName={bart.firstName} lastName={bart.lastName} />
+      <Avatar image={homer.image} firstName={homer.firstName} lastName={homer.lastName} />
     </div>
   )
 };
 
 export default App;
-
-
-
-// Stephane > Jeremy > Roxane > Vincent > Youcef > Denis > Stephane
-// 4min par rotation
-// HOMER IMG https://www.stickees.com/files/cartoon/the-simpsons/2247-homer-simpson-beer.png
